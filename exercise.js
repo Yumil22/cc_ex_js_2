@@ -16,8 +16,20 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
-    
-    
+    let arr = str.split("");
+    const withoutSpaces = arr.filter((letter) => letter != " ");
+    let reversed = [...withoutSpaces].reverse();
+    let sameLetter = 0;
+    for (let i = 0; i < withoutSpaces.length; i++) {
+        if (withoutSpaces[i] == reversed[i]) {
+            sameLetter++;
+        }
+    }
+    if (sameLetter === withoutSpaces.length) {
+        return true;
+    } else {
+        return false;
+    }
     /* Only make changes below this comment */
 }
 
