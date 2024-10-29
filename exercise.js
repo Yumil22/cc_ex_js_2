@@ -16,8 +16,16 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
+
+        // Eliminar espacios en la cadena y convertir todo a minúsculas
+        const cleanedStr = str.replace(/ /g, '').toLowerCase();
     
-    
+        // Invertir la cadena limpia
+        const reversedStr = cleanedStr.split('').reverse().join('');
+        
+        // Comparar la cadena original con la invertida
+        return cleanedStr === reversedStr;
+        
     /* Only make changes below this comment */
 }
 
