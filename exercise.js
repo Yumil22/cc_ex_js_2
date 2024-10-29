@@ -16,13 +16,18 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
-    
+
+    const juntar = str.split(' ');
+    const unir_junto = juntar.join('');
+    const letras = unir_junto.split('');
+    const array_letters = letras.reverse()
+    const resultado = array_letters.join('');
+
+    return unir_junto === resultado
+
     
     /* Only make changes below this comment */
 }
-
-
-
 
 
 /** DO NOT CHANGE THE LINE BELOW **/
