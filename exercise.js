@@ -16,7 +16,18 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
-    
+    let DividirString = str.split('')
+    let InvertirArray = DividirString.reverse()
+    let UnirCaracteres = InvertirArray.join('')
+
+    let UnirCaracteresSinEspacios = UnirCaracteres.replace(/ /,'')
+    let StringSinEspacios = str.replace(/ /g,'')
+
+    if (StringSinEspacios==UnirCaracteresSinEspacios){
+        return true;
+    } else {
+        return false;
+    }
     
     /* Only make changes below this comment */
 }
