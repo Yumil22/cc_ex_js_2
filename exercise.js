@@ -16,8 +16,11 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
+    const str_normal = str.replace(/\s+/g,'').toLowerCase();
+
+    const str_alreves = str_normal.split('').reverse().join('');
     
-    
+    return str_normal == str_alreves;
     /* Only make changes below this comment */
 }
 
